@@ -8,6 +8,7 @@ int main(int argc, char **argv)
   int result=0;
 
   scanf("%d",&number);
+  printf("haha : %d\n",number);
   result = fibonacci(number);   
   printf("The fibonacci sequence at %d is: %d\n", number, result);
 }
