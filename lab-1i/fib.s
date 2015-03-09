@@ -25,12 +25,17 @@ fibonacci:
 	mov r1 , #1
 	mov r2 , #0
 
+	@ if input = 1 give it answer and send to end 
 	cmp r5 , #1
 	beq .L5
+
+	@ if input = 0 give it answer and send to end
 	cmp r5 , #0
 	beq .L4
+	@ mofify the input for correct answer	
 	sub r5 , #1
 .L3:	
+	@ fibonacci formula	
 	cmp r5 , #0
 	beq .L4
 
